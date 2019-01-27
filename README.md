@@ -8,5 +8,6 @@
 - **00 - Name Generator:** Generates a random name from an array of options
 - **01 - Higher Lower:** Higher or lower game. Generates random number and you have to guess it using the program's hints
 - **02 - Temp Converter:** Simply converts between Fahrenheit and Celsius
+- **06 - Rock, Paper, Scissors:** A game of Rock, Paper, Scissors (Lizard, Spock)
 - **21 - Connect Four:** Connect four game. Includes empty answer protection
 - **23 - Image Board Media Downloader:** Downloads images from a certain \*chan site

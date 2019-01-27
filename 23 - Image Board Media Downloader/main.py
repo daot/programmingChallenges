@@ -3,11 +3,7 @@ from bs4 import BeautifulSoup
 
 url = str(sys.argv[1]).replace('http://', '').replace('https://', '')
 
-start_time = time.time()
-interval = 10
-for x in range(20):
-    time.sleep(start_time + x * interval - time.time())
-
+while(True):
     data = requests.get(f'https://{url}')
 
     soup = BeautifulSoup(data.text, 'html.parser')
@@ -29,3 +25,5 @@ for x in range(20):
             print(names[i], end=' - ')
             urllib.request.urlretrieve(f'https://{imgs[i]}', f'downloads/{url.split("/")[1]} - {url.split("/")[3]}/{names[i]}')
             print("Done")
+
+    time.sleep(10)
